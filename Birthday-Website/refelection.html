@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>For You 💖</title>
+    <style>
+        * {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        section {
+            min-height: 100vh;
+            padding: 60px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .funny {
+            background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+            color: #1e293b;
+        }
+
+        .reflection {
+            background: #0f172a;
+            color: #e2e8f0;
+        }
+
+        .container {
+            max-width: 800px;
+            line-height: 1.8;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        p {
+            margin-bottom: 16px;
+        }
+
+        .scroll-btn {
+            display: block;
+            text-align: center;
+            margin-top: 30px;
+            font-size: 18px;
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+</head>
+<body>
+<!-- Background Music -->
+<audio id="bgMusic" autoplay loop style="display:none;">
+  <source src="assets/audio/hbd.m4a" type="audio/m4a">
+</audio>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+<!-- SECTION 1: FUNNY -->
+<section class="funny">
+    <div class="container">
+        <h1>😂 About You</h1>
+
+        <p>🎂 Turning 32… but mentally still 23 and emotionally still planning trips like a teenager 😄</p>
+
+        <p>🐱 Official cat lover — cats > humans (no discussion, no voting, final decision 😂)</p>
+
+        <p>🌍 Full-time traveler (mentally), part-time employee (physically)</p>
+
+        <p>✈️ Life motto: “Let’s go somewhere… anywhere”</p>
+
+        <p>🌿 Nature is your therapist — mountains, lakes, flowers, snow… all booked without appointments 😌</p>
+
+        <p>🚣‍♀️ Adventure level: “Yes I’ll do it” → “Why did I agree to this?” → “That was actually fun 😄”</p>
+
+        <p>📸 Camera roll situation: 10% usable photos, 90% “Wait, take one more… this angle is better” 😂</p>
+
+        <p>🌸 Sees flowers: Normal people → walk past | You → photoshoot, outfit check, cinematic moment 🌸🎬</p>
+
+        <p>❄️ Seasonal behavior: Winter 🥶 / Summer 🥵 — still goes out looking like a Pinterest model 😆</p>
+
+        <p>🍷 Personality switch: Explorer mode 🌍 → Chill mode 🍷 in under 5 seconds</p>
+
+        <p>💃 Saree elegance 💖 → Travel movie main character 🎬 instantly</p>
+
+        <p>😄 Smiles in every picture… even when the sun is attacking your eyes ☀️😂</p>
+
+        <p>🧗‍♀️ Climbs mountains, sits on cliffs, swings in flower fields… still says “not adventurous” 😄</p>
+
+        <p>💖 Soft heart, strong personality, just the right amount of drama 🎭</p>
+
+        <p>🔁 Life cycle: Travel → Miss → Instagram → Plan again 🌍</p>
+
+        <p>⚠️ Warning: May cause sudden travel plans, excessive smiling, and “one last picture” syndrome 📸😄</p>
+
+        <a href="#reflection" class="scroll-btn">⬇️ Scroll for something deeper</a>
+    </div>
+</section>
+
+<!-- SECTION 2: REFLECTION -->
+<section id="reflection" class="reflection">
+    <div class="container">
+        <h1>💭 A Reflection About You</h1>
+
+        <p>There’s something beautifully complex about you. ✨</p>
+
+        <p>You’re not someone who just goes through life on the surface —  
+        you think, you feel, and you question everything deeply. 🤍</p>
+
+        <p>Life hasn’t been all easy for you.  
+        A few experiences… a few losses…  
+        have shaped you in ways most people wouldn’t understand. 💔</p>
+
+        <p>They made you stronger, yes —  
+        but also more careful, more aware, and sometimes… more guarded. 🛡️</p>
+
+        <p>You’ve learned to protect your peace. 🕊️</p>
+
+        <p>But even with all of that —  
+        you haven’t lost your curiosity about life. 🌿</p>
+
+        <p>You still want to explore.  
+        You still want to understand people. 🌍</p>
+
+        <p>And that’s not confusion.  
+        That’s growth. 🌱</p>
+
+        <p>You’re standing between two worlds —  
+        your values and the fast-changing world. ⏳</p>
+
+        <p>Your strength lies in searching for what feels real. 💫</p>
+
+        <p>Your mother has always been your strength 💖  
+        and you’re already making her proud.</p>
+
+        <p>And somewhere, your dad would be smiling too 😊</p>
+
+        <p>You’re not just an architect by profession 🏛️  
+        you’re an architect of your life.</p>
+
+        <p>You have the power to shape your path —  
+        in your own way. ✨</p>
+
+        <p>You don’t have to rush it.</p>
+
+        <p>You’re already becoming someone  
+        who understands life a little deeper than most. 💫</p>
+    </div>
+</section>
+<h2>Automatic Slideshow</h2>
+<p>Change image every 2 seconds:</p>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="https://instagram.fyvr4-1.fna.fbcdn.net/v/t51.82787-15/572542588_18533406229030283_5970531727534921889_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ig_cache_key=Mzc1MDkyMzkyNDIzNTQ2MDUzMw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEyODB4MTI4MC5zZHIuQzMifQ%3D%3D&_nc_ohc=oEE6UMyoG3IQ7kNvwEzaZhd&_nc_oc=Adpm9t6ERL41HYP5nN941lhiaMTm1cpEcJZ7llm0zZbufU1N39KwHIMcpxLUTf9-0CnTTOKtceb1ZlqSEfPY9RRW&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fyvr4-1.fna&_nc_gid=viJaPav9evlVz7eNYUAt9w&_nc_ss=7a32e&oh=00_Af11HVGM-vqVIdr1cTOkULBK2xQQIcW7yA57f6eh6Acy8g&oe=69E739D4","">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="img_snow_wide.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="img_mountains_wide.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+</body>
+</html>
